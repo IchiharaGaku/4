@@ -1,0 +1,607 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+img {
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 4px gray;
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.between {
+  justify-content: space-between;
+}
+.around {
+  justify-content: space-around;
+}
+header {
+  margin: 0 auto;
+  height: 800px;
+  width: 100%;
+  background-color: #ffede9;
+}
+
+#hamburger {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 100;
+  top: 15px;
+  right: 20px;
+  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+#hamburger span {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 35px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  transition: 0.8s;
+}
+#hamburger span:nth-of-type(1) {
+  top: 14px;
+}
+#hamburger span:nth-of-type(2) {
+  top: 24px;
+}
+#hamburger span:nth-of-type(3) {
+  top: 34px;
+}
+#hamburger.active span:nth-of-type(1) {
+  top: 20px;
+  transform: rotate(45deg);
+}
+#hamburger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+#hamburger.active span:nth-of-type(3) {
+  top: 20px;
+  transform: rotate(-45deg);
+}
+.menu-content {
+  display: block;
+}
+.menu-content,
+.menu-title {
+  margin: 50px 20px;
+  font-size: 2.2rem;
+  color: #f8c7bc;
+  text-align: left;
+  font-weight: bold;
+}
+.menu-content {
+  width: calc(80% - 120px);
+  height: 80%;
+  text-align: center;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  right: calc(-80% - 120px);
+  background-color: #fff;
+  opacity: 0.9;
+  color: #f8c7bc;
+  box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
+  z-index: 100;
+}
+.menu-content li a {
+  color: #f8c7bc;
+  margin: 15px;
+  padding: 5px;
+  border-bottom: 1px solid #f8c7bc;
+  text-decoration: none;
+  display: block;
+}
+.menu-content li {
+  width: 100%;
+  text-align: left;
+}
+.menu-content.open {
+  right: 0;
+}
+
+.hair {
+  padding: 30px 0 0 30px;
+  font-size: 15px;
+  font-family: "Times New Roman";
+  color: #727271;
+}
+
+.com {
+  font-size: 10px;
+  transform: rotate(-90deg);
+  position: relative;
+  right: 48%;
+  bottom: 400px;
+  font-family: "Times New Roman";
+  color: #727271;
+}
+.deg {
+  content: "";
+  width: 750px;
+  height: 650px;
+  border: 2px solid #dedede;
+  transform: rotate(-5deg);
+  position: relative;
+  left: 30%;
+}
+.head {
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: all 1.2s;
+}
+.head.fadein {
+  opacity: 1;
+  transform: rotate(5deg);
+}
+.header-logo {
+  position: relative;
+  font-size: 140px;
+  color: #5f803b;
+  top: -250px;
+  left: 60%;
+  transform: rotate(-20deg);
+  text-decoration: underline;
+}
+.top-btn {
+  background-color: #000;
+  color: #7ad11c;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+.first {
+  margin: 0 auto;
+  background-color: #ffede9;
+}
+.blog {
+  font-size: 50px;
+  text-decoration: underline;
+  color: #5f803b;
+  font-family: Sacramento;
+  position: relative;
+  top: 30px;
+  padding: 50px 0 0 20%;
+}
+.contain {
+  margin: 0 0 0 40%;
+  border-collapse: collapse;
+  width: 40%;
+}
+.contain tr {
+  border-bottom: #bebdbd 1px solid;
+}
+.contain th,
+.contain td {
+  text-align: left;
+  font-size: 20px;
+  color: #303030;
+}
+.contain th {
+  padding: 10px 0;
+}
+.more {
+  margin: 20px 0 0 40%;
+  padding-bottom: 30px;
+  font-size: 25px;
+  color: #5f803b;
+  cursor: pointer;
+}
+.more::after {
+  content: "ー";
+  color: #5f803b;
+  cursor: pointer;
+}
+.more:hover {
+  opacity: 0.8;
+}
+.second {
+  background-color: #ffede9;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.salon {
+  font-size: 100px;
+  text-decoration: underline;
+  color: #5f803b;
+  font-family: Sacramento;
+  position: relative;
+  left: 50%;
+}
+.text {
+  font-size: 20px;
+  color: #303030;
+  overflow-wrap: break-word;
+  line-height: 40px;
+}
+.ichi {
+  position: relative;
+  left: 50%;
+  width: 50%;
+}
+.container {
+  width: 500px;
+  height: 400px;
+  background-color: #ede4e4;
+  position: relative;
+  bottom: 400px;
+}
+.hairsalon {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 1.2s;
+}
+.hairsalon.salonfade {
+  opacity: 1;
+  top: 160px;
+  left: 40%;
+}
+
+.third {
+  margin: 0 auto;
+  background-color: #ffede9;
+  padding-top: 200px;
+  height: 1000px;
+}
+.container-second {
+  width: 50%;
+  height: 80%;
+  background-color: #ede4e4;
+}
+.menu {
+  font-size: 100px;
+  text-decoration: underline;
+  color: #5f803b;
+  font-family: Sacramento;
+  padding: 100px 150px;
+}
+.ni {
+  padding-left: 150px;
+}
+.cut {
+  width: 50%;
+  height: 70%;
+  position: relative;
+  left: 40%;
+  bottom: 700px;
+  opacity: 0;
+  transition: all 1.2s;
+}
+.cut.cutfade {
+  opacity: 1;
+}
+.fourth {
+  margin: 0 auto;
+  background-color: #ffede9;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+.container-third {
+  margin: 0 auto;
+  text-align: center;
+  width: 28%;
+  height: 200px;
+  position: relative;
+  bottom: 400px;
+}
+.staff {
+  text-decoration: underline;
+  color: #5f803b;
+  font-family: Sacramento;
+  font-size: 50px;
+  padding: 30px 0;
+}
+.containertext {
+  font-size: 25px;
+  line-height: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+.arrowmore {
+  margin: 70px auto;
+  padding: 10px 0;
+  width: 50%;
+  font-size: 25px;
+  border: 1px solid #303030;
+  cursor: pointer;
+}
+.thirdfade {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 1.2s;
+}
+.thirdfade.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.thirdfade:nth-of-type(2) {
+  transition-delay: 200ms;
+}
+.thirdfade:nth-of-type(3) {
+  transition-delay: 400ms;
+}
+
+.fifth {
+  margin: 0 auto;
+  background-color: #ffede9;
+  height: 400px;
+}
+.reccontainer {
+  background-color: #000;
+  opacity: 0.4;
+  height: 400px;
+}
+.recruit,
+.san {
+  z-index: 1;
+}
+
+.haircut {
+  width: 60%;
+  height: 400px;
+  opacity: 0.2;
+  position: relative;
+  bottom: 640px;
+}
+.haircut2 {
+  width: 40%;
+  height: 400px;
+  opacity: 0.2;
+  position: relative;
+  bottom: 1040px;
+  left: 60%;
+}
+.lasttext {
+  text-align: center;
+  position: relative;
+  bottom: 320px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 1.8s;
+}
+.lasttext.lastfade {
+  opacity: 1;
+}
+.recruit {
+  text-decoration: underline;
+  color: #5f803b;
+  font-family: Sacramento;
+  font-size: 60px;
+  padding: 30px 0;
+}
+.san {
+  color: #dedede;
+}
+
+.sixth {
+  height: 200px;
+  background-color: #ada2a2;
+}
+.lastcontainer {
+  padding: 30px 0 30px 15%;
+}
+.contact {
+  font-size: 30px;
+  text-decoration: underline;
+  color: #dedede;
+}
+.lastcontainer p {
+  padding-top: 20px;
+  color: #dedede;
+}
+
+footer {
+  background-color: #7b7575;
+  height: 60px;
+}
+.coltd {
+  padding: 20px 10%;
+  font-size: 20px;
+}

@@ -1,0 +1,367 @@
+@media screen and (max-width: 768px) {
+  #hamburger {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  #hamburger span {
+    position: absolute;
+    left: 4px;
+    width: 30px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    transition: 0.8s;
+  }
+  #hamburger span:nth-of-type(1) {
+    top: 10px;
+  }
+  #hamburger span:nth-of-type(2) {
+    top: 20px;
+  }
+  #hamburger span:nth-of-type(3) {
+    top: 30px;
+  }
+  .menu-content {
+    display: block;
+  }
+  .menu-content,
+  .menu-title {
+    margin: 50px 20px;
+    font-size: 2.2rem;
+    color: #f8c7bc;
+    text-align: left;
+    font-weight: bold;
+  }
+  .menu-content {
+    width: calc(100% - 60px);
+    height: 70%;
+    text-align: center;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    right: calc(-100% - 60px);
+    background-color: #fff;
+    color: #f8c7bc;
+    box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
+    z-index: 100;
+  }
+  .menu-content li a {
+    color: #f8c7bc;
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 1px solid #ffede9;
+    text-decoration: none;
+    display: block;
+  }
+  .menu-content li {
+    width: 100%;
+    text-align: left;
+  }
+  .menu-content.open {
+    right: 0;
+  }
+  header {
+    height: 400px;
+  }
+  .com {
+    bottom: 100px;
+  }
+  .head {
+    width: 400px;
+    height: 300px;
+    margin: 0;
+  }
+  .deg {
+    width: 400px;
+    height: 300px;
+  }
+  .header-logo {
+    font-size: 70px;
+  }
+
+  .contain th,
+  .contain td {
+    font-size: 15px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .second {
+    height: 300px;
+  }
+  .salon {
+    font-size: 50px;
+    left: 55%;
+  }
+  .ichi {
+    left: 55%;
+    width: 40%;
+    padding-top: 30px;
+    line-height: 30px;
+  }
+  .third {
+    height: 800px;
+  }
+  .container {
+    width: 300px;
+    height: 200px;
+    bottom: 300px;
+  }
+  .hairsalon {
+    width: 300px;
+    height: 200px;
+    left: 30%;
+  }
+
+  .container-second {
+    height: 30%;
+    width: 60%;
+  }
+  .menu {
+    font-size: 50px;
+    padding: 50px 0 0 30px;
+  }
+  .ni {
+    padding: 30px 0 0 30px;
+    line-height: 40px;
+  }
+  .cut {
+    height: 50%;
+    bottom: 400px;
+    left: 45%;
+  }
+  .fourth {
+    height: 0;
+  }
+  .containertext {
+    font-size: 17px;
+  }
+
+  .sixth {
+    height: 180px;
+  }
+  .contact {
+    font-size: 25px;
+  }
+  .lastcontainer p {
+    font-size: 14px;
+  }
+  .weekday {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  #hamburger {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  #hamburger span {
+    position: absolute;
+    left: 4px;
+    width: 30px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    transition: 0.8s;
+  }
+  #hamburger span:nth-of-type(1) {
+    top: 10px;
+  }
+  #hamburger span:nth-of-type(2) {
+    top: 20px;
+  }
+  #hamburger span:nth-of-type(3) {
+    top: 30px;
+  }
+  .menu-content {
+    display: block;
+  }
+  .menu-content,
+  .menu-title {
+    margin: 50px 20px;
+    font-size: 2.2rem;
+    color: #f8c7bc;
+    text-align: left;
+    font-weight: bold;
+  }
+  .menu-content {
+    width: calc(100% - 60px);
+    height: 50%;
+    text-align: center;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    right: calc(-100% - 60px);
+    background-color: #fff;
+    color: #f8c7bc;
+    box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
+    z-index: 100;
+  }
+  .menu-content li a {
+    color: #f8c7bc;
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 1px solid #ffede9;
+    text-decoration: none;
+    display: block;
+  }
+  .menu-content li {
+    width: 100%;
+    text-align: left;
+  }
+  .menu-content.open {
+    right: 0;
+  }
+  header {
+    height: 250px;
+  }
+  .com {
+    bottom: 0px;
+  }
+  .head {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+  }
+  .deg {
+    width: 300px;
+    height: 200px;
+    left: 10%;
+  }
+  .header-logo {
+    font-size: 70px;
+    top: -100px;
+    font-size: 50px;
+    left: 40%;
+  }
+  .blog {
+    font-size: 40px;
+    padding-left: 10%;
+  }
+  .contain {
+    width: 55%;
+  }
+  .contain th,
+  .contain td {
+    font-size: 10px;
+  }
+  .more {
+    font-size: 15px;
+  }
+
+  .second {
+    padding-top: 250px;
+  }
+  .container {
+    bottom: 450px;
+  }
+  .hairsalon {
+    top: 0;
+    left: 0;
+  }
+  .salon {
+    font-size: 40px;
+    left: 5%;
+    top: 0px;
+  }
+  .text {
+    font-size: 10px;
+  }
+  .ichi {
+    width: 90%;
+    left: 5%;
+  }
+
+  .third {
+    height: 500px;
+  }
+  .container-second {
+    width: 70%;
+    position: relative;
+    bottom: 200px;
+  }
+  .menu {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  .ni {
+    line-height: 30px;
+    padding-top: 20px;
+  }
+  .cut {
+    bottom: 500px;
+  }
+  .fourth {
+    display: block;
+    height: 450px;
+  }
+  .container-third {
+    width: 90%;
+    height: 100px;
+    bottom: 0;
+  }
+  .alpha {
+    bottom: 450px;
+  }
+  .beta {
+    bottom: 250px;
+  }
+  .gunma {
+    bottom: 50px;
+  }
+  .arrowmore {
+    margin: 30px auto 0;
+  }
+  .thirdfade:nth-of-type(2) {
+    transition-delay: 0ms;
+  }
+  .thirdfade:nth-of-type(3) {
+    transition-delay: 0ms;
+  }
+
+  .fifth,
+  .haircut,
+  .haircut2 {
+    height: 200px;
+  }
+  .reccontainer {
+    height: 200px;
+    opacity: 0.2;
+  }
+  .haircut {
+    bottom: 370px;
+    opacity: 0.1;
+  }
+  .haircut2 {
+    bottom: 570px;
+    opacity: 0.1;
+  }
+  .lasttext {
+    bottom: 200px;
+  }
+  .recruit {
+    font-size: 50px;
+  }
+  .san {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .sixth {
+    background-color: #5a5858;
+  }
+}
